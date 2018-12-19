@@ -11,26 +11,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2018_12_19_151303_create_factors_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_19_151303_create_factors_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_12_19_154959_create_maps_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_19_154959_create_maps_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/map.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +61,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="119" lean-forward="false" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_12_19_172922_create_shops_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_19_172922_create_shops_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/shop.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,6 +135,8 @@
         <option value="$PROJECT_DIR$/app/payment.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_19_161933_create_services_table.php" />
         <option value="$PROJECT_DIR$/app/service.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_19_172922_create_shops_table.php" />
+        <option value="$PROJECT_DIR$/app/shop.php" />
       </list>
     </option>
   </component>
@@ -259,12 +261,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545225988016</updated>
-      <workItem from="1545225991289" duration="7549000" />
+      <workItem from="1545225991289" duration="7675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7549000" />
+    <option name="totallyTimeSpent" value="7675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="3" width="790" height="720" extended-state="0" />
@@ -457,8 +459,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/service.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="119" lean-forward="false" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_19_172922_create_shops_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
