@@ -14,15 +14,23 @@ class CreateShopsTable extends Migration
     public function up()
     {
         Schema::create('shops', function (Blueprint $table) {
+
             $table->increments('id');
 
-            $table->string('user_id');
+            $table->string('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->integer('map_id')->unsigned();
+            $table->foreign('map_id')->references('id')->on('maps')->onDelete('cascade');
+
+            $table->string('service_id')->unsigned();
+            $table->foreign('service_id')->references('id')->on('services');
+
             $table->string('city')->default('mashhad');
-            $table->string('street_primary');
-            $table->string('street_secondary');
-            $table->string('C_address');
-            $table->string('service_id');
             $table->string('content');
+
+            $table->text('image');
+
             $table->boolean('sex');
             $table->integer('bill');//صورت حساب
             $table->dateTime('Checkout_date');//تاریخ تسویه حساب
