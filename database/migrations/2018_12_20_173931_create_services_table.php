@@ -15,7 +15,9 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('shop_id');
+
+//            $table->integer('shop_id')->unsigned();
+//            $table->foreign('shop_id')->references('id')->on('shops');
 
             $table->string('service_name');
             $table->text('service_description');
@@ -24,6 +26,8 @@ class CreateServicesTable extends Migration
             $table->integer('service_discount');
             $table->timestamps();
         });
+
+
     }
 
     /**
@@ -33,6 +37,7 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('services_shop');
         Schema::dropIfExists('services');
     }
 }

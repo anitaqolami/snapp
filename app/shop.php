@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class shop extends Model
 {
-    protected $fillable = ['city','street_primary','street_secondary','C_address','service_id', 'content','sex','bill','Checkout_date','rate','active','visible'];
+    protected $fillable = ['user_id', 'city', 'map_id', 'service_id', 'content', 'image', 'sex', 'bill', 'Checkout_date', 'rate', 'active', 'visible'];
+
+    public function factors()
+    {
+        return $this->hasMany(factor::class);
+    }
 
 }

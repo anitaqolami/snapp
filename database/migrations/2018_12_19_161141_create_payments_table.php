@@ -19,7 +19,7 @@ class CreatePaymentsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->string('resnumber');
-            $table->string('course_id')->default('vip');
+
             $table->integer('price');
             $table->boolean('payment')->default(false);
             $table->timestamps();

@@ -23,14 +23,14 @@ class CreateShopsTable extends Migration
             $table->integer('map_id')->unsigned();
             $table->foreign('map_id')->references('id')->on('maps')->onDelete('cascade');
 
-            $table->integer('service_id')->unsigned();
-            $table->foreign('service_id')->references('id')->on('services');
+////            $table->integer('service_id')->unsigned();
+////            $table->foreign('service_id')->references('id')->on('services');
 
-            $table->string('city')->default('mashhad');
-            $table->string('content');
 
             $table->text('image');
 
+            $table->string('city')->default('mashhad');
+            $table->string('content');
             $table->boolean('sex');
             $table->integer('bill');//صورت حساب
             $table->dateTime('Checkout_date');//تاریخ تسویه حساب

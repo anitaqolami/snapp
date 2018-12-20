@@ -24,7 +24,7 @@ class CreateFactorsTable extends Migration
 
             $table->integer('service_id')->unsigned();
             $table->foreign('service_id')->references('id')->on('services');
-            
+
             $table->integer('code_discount');
             $table->string('price');
             $table->integer('service_discount');
