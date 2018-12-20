@@ -17,13 +17,13 @@ class CreateShopsTable extends Migration
 
             $table->increments('id');
 
-            $table->string('user_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->integer('map_id')->unsigned();
             $table->foreign('map_id')->references('id')->on('maps')->onDelete('cascade');
 
-            $table->string('service_id')->unsigned();
+            $table->integer('service_id')->unsigned();
             $table->foreign('service_id')->references('id')->on('services');
 
             $table->string('city')->default('mashhad');
