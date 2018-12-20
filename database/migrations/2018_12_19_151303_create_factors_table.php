@@ -15,9 +15,11 @@ class CreateFactorsTable extends Migration
     {
         Schema::create('factors', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('shop_id');
-            $table->string('user_id');
-            $table->string('service_id');
+
+            $table->integer('user_id');
+            $table->integer('shop_id');
+            $table->integer('service_id');
+
             $table->integer('code_discount');
             $table->string('price');
             $table->integer('service_discount');
