@@ -32,4 +32,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(factor::class);
     }
+
+    public function shops()
+    {
+        return $this->hasMany(shop::class);
+    }
+
+    public function favorites()
+    {
+        return $this->hasMany(favorite::class);
+    }
 }

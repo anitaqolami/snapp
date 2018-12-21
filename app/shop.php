@@ -13,4 +13,13 @@ class shop extends Model
         return $this->hasMany(factor::class);
     }
 
+    public function categories()
+    {
+        return $this->belongsToMany(category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
