@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('admin.panel');
+    return view('user.master');
 });
